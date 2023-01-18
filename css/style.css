@@ -1,0 +1,68 @@
+.join-community {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-top: 2rem;
+    background-color: #fff;
+}
+
+.join-community__call {
+    color: var(--clr-cyan);
+}
+
+.join-community__guarantee {
+    color: var(--clr-bright-yellow);
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+    line-height: 1.625rem;
+}
+
+.join-community__details {
+    color: var(--clr-graysh-blue);
+    line-height: 1.625rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.subscription {
+    background-color: var(--clr-cyan);
+    color: #fff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.subscription__call {
+    font-size: .875rem;
+}
+
+.subscription__price-container {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: .625rem;
+    align-items: center;
+}
+
+.subscription__price {
+    font-size: 1.5rem;
+}
+
+.subscription__month {
+    color: var(--clr-light-gray);
+    padding-left: .625rem;
+}
+
+
+.subscription__details {
+    font-size: .875rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.subscription__sign-up { /*Falta box-shadow*/
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: var(--clr-bright-yellow);
+    display: block;
+    padding: .625rem;
+}
