@@ -1,6 +1,9 @@
 .card { /* Falta Box Shadow */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100vh;
 }
 
 .join-community {
@@ -8,6 +11,7 @@
     border-top-right-radius: 6px;
     padding-top: 2rem;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
 }
 
 .join-community__call {
@@ -33,6 +37,7 @@
     color: #fff;
     padding-top: 1.5rem;
     padding-bottom: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
 }
 
 .subscription__call {
@@ -79,7 +84,7 @@
     border-bottom-right-radius: 6px;
     background-color: var(--clr-graysh-blue);
     color: #fff;
-
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
 }
 
 .why-us__title {
@@ -91,4 +96,44 @@
     width: 220px;
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 750px;
+        max-height: 500px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        'join-community join-community'
+        'subscription why-us';
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        
+        
+}
+    .join-community {
+        grid-area: join-community;
+        box-shadow: none;
+    }
+
+    .subscription {
+        grid-area: subscription;
+        box-shadow: none;
+        border-bottom-left-radius:6px;
+    }
+
+    .subscription__details {
+        padding-top: 1.45rem;
+        padding-bottom: 1.45rem;
+    }
+
+    .why-us {
+        grid-area: why-us;
+        border-bottom-left-radius: 0;
+        
+        box-shadow: none;
+    }
 }

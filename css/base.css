@@ -20,9 +20,20 @@
 body {
     background-color: var(--clr-light-gray);
     font-family: var(--ff-karla);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     padding-left: 6%;
     padding-right: 6%;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }
