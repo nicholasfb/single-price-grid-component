@@ -17,6 +17,7 @@
     color: var(--clr-bright-yellow);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 
 }
 
@@ -24,6 +25,7 @@
     line-height: 1.5rem;
     color: var(--clr-graysh-blue);
     font-weight: 400;
+    font-size: .86rem;
 }
 
 .subscription {
@@ -40,7 +42,7 @@
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
 }
 
 .susbscription__price {
@@ -51,12 +53,13 @@
 
 .subscription__month {
     color: var(--clr-graysh-blue);
-    padding-left: 1.25rem;
+    padding-left: .75rem;
 }
 
 .subscription__details {
     color: #fff;
     font-weight: 400;
+    font-size: 1.075rem;
     margin-bottom: 1.75rem;
 }
 
@@ -72,9 +75,50 @@
 }
 
 .about__details {
+    max-width: 250px;
+    
     color: var(--clr-light-gray);
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.3rem;
     margin-top: 1rem;
-    padding-right: 5rem;
+    padding-right: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'community community'
+        'subscription about';
+        max-width: 600px;
+    }
+
+    .community {
+        grid-area: community;
+    }
+
+    .community__details {
+        font-size: 1rem;
+    }
+
+    .subscription {
+        grid-area: subscription;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 6px;
+        
+    }
+    .subscription__details {
+        font-size: 1rem;
+    }
+
+    .about {
+        grid-area: about;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .about__title {
+        margin-bottom: 1rem;
+    }
 }
