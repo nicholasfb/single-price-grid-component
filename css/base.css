@@ -27,13 +27,23 @@ body {
 }
 
 .container {
-    padding-left: 6%;
-    padding-right: 6%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        padding-left: 8%;
-        padding-right: 8%;
-    }
+.padding {
+    padding: 1.75rem 1rem;
+}
+
+.button {
+    display: block;
+    background-color: var(--clr-bright-yellow);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.204);
+    border-radius: 6px;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+
 }
